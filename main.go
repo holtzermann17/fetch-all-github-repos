@@ -40,7 +40,7 @@ func main() {
 	// get all pages of results
 	var allRepos []*github.Repository
 	for {
-		repos, resp, err := client.Repositories.ListByOrg(ctx, "optimizely", opt)
+		repos, resp, err := client.Repositories.ListByOrg(ctx, "planetmath", opt)
 		if err != nil {
 			fmt.Printf("Error: %s", err)
 		}
